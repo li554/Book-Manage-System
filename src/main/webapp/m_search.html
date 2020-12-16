@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>图书管理-管理员</title>
+<link href="css/publice.css" type="text/css" rel="stylesheet" />
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="css/manager.css">
+<script type="text/javascript" src="js/jquery1.42.min.js" ></script>
+<script src="https://cdn.staticfile.org/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>	
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js" ></script>
+<script type="text/javascript" src="js/style.js" ></script>
+<script type="text/javascript" src="js/m_search.js"></script>
+</head>
+<body>
+<!--top_bar-->
+<div class="clear"></div>
+<div class="topWrap">
+	<div class="top_bar">
+		<div class="top_left">
+			欢迎访问-管理员！
+		</div>
+      <div class="top_right">
+          <a class="land" href="login.html"> 登录 </a>
+         <select class="connection">
+                   <option value="volvo">联系我们</option>
+                   <option value="saab">QQ:3061815893</option>
+                   <option value="opel">微信：GXG20000915</option>
+            </select>
+      </div>
+	</div>
+</div>
+<!--nav-->
+<div class="clear"></div>
+<div class="navWrap">
+	<div class="logo"><a href="index.html"><img src="img/logo.png"></a></div>
+	<div class="nav_bar">
+		<a href="manager.html">管理图书</a>
+		<a href="m_users.html">管理用户</a>
+		<a href="m_search.html" class="cur">查询</a>
+	</div>
+</div>
+<!--banner-->
+<div id="manager-nav">
+   	<header>
+   		<input type="text" name="filter_user" placeholder="用户过滤" onchange="filter();">
+   		<input type="text" name="filter_book" placeholder="图书过滤" onchange="filter();">
+   		<select onchange="filter();">
+   			<option>全部</option>
+   			<option>网络文学</option>
+   			<option>计算机</option>
+   			<option>科幻小说</option>
+   			<option>物理学</option>
+   			<option>哲学</option>
+   			<option>社会学</option>
+   		</select>
+   		<select onchange="filter();">
+   			<option>图书属性</option>
+   			<option>借阅记录</option>
+   		</select>
+   	</header>
+   	<section>
+   		
+   	</section>
+</div>
+
+<script src='js/jquery.min.js'></script>
+<script src="js/script.js"></script>
+<script src="https://cdn.staticfile.org/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>	
+<!--main-->
+
+<!--foot-->
+<div class="clear"></div>
+<div class="footWrap">
+	<div class="footer">
+		<div class="foot_l">
+			<p><img src="img/foot_icon1.png">151-5601-9782</p>
+			<a href="https://www.amap.com/place/B0FFG8Y6Y5"target="_self"><img src="img/foot_icon2.png">点击了解我们的位置</a>
+		</div>
+		<div class="foot_r"></div>
+	</div>
+</div>
+<div class="wz" style=" text-align:center;">©戈小戈,李云耀,开心,张楠</div>
+</body>
+</html>

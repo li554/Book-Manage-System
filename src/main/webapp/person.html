@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>图书管理-个人</title>
+<link href="css/publice.css" type="text/css" rel="stylesheet" />
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="css/person.css">
+<script type="text/javascript" src="js/jquery1.42.min.js" ></script>
+<script src="https://cdn.staticfile.org/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>	
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js" ></script>
+<script type="text/javascript" src="js/style.js" ></script>
+<script type="text/javascript" src="js/person.js"></script>
+</head>
+<body>
+<!--top_bar-->
+<div class="clear"></div>
+<div class="topWrap">
+	<div class="top_bar">
+		<div class="top_left">
+			欢迎访问-个人！
+		</div>
+		<div class="top_right">
+		    <a class="land" href="login.html"> 登录 </a>
+			<select class="connection">
+                   <option value="volvo">联系我们</option>
+                   <option value="saab">QQ:3061815893</option>
+                   <option value="opel">微信：GXG20000915</option>
+            </select>
+		</div>
+	</div>
+</div>
+<!--nav-->
+<div class="clear"></div>
+<div class="navWrap">
+	<div class="logo"><a href="index.html"><img src="img/logo.png"></a></div>
+	<div class="nav_bar">
+		<a href="index.html" >首页</a>
+		<a href="person.html"class="cur">个人</a>
+		<a href="administer.html">管理</a>
+		<a href="search.html">查询</a>
+		<a href="about.html">关于</a>
+		<a href="feedback.html">反馈</a>
+	</div>
+</div>
+<!--banner-->
+<div id="nav-1">
+
+    <ul class="nav">
+        <li class="slide1"></li>
+        <li class="slide2"></li>
+        <li><a class="active" href="javascript:;">个人信息</a></li>
+        <li><a href="#/">修改昵称</a></li>
+        <li><a href="#/">修改密码</a></li>
+    </ul>
+
+</div>
+
+<script src='js/jquery.min.js'></script>
+<script src="js/script.js"></script>
+<script src="https://cdn.staticfile.org/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>	
+<!--main-->
+
+<!--foot-->
+<div class="clear"></div>
+<div class="footWrap">
+	<div class="footer">
+		<div class="foot_l">
+			<p><img src="img/foot_icon1.png">151-5601-9782</p>
+			<a href="https://www.amap.com/place/B0FFG8Y6Y5"target="_self"><img src="img/foot_icon2.png">点击了解我们的位置</a>
+		</div>
+		<div class="foot_r">
+			
+		</div>
+		
+          
+	</div>
+</div>
+<div class="wz" style=" text-align:center;">©戈小戈,李云耀,开心,张楠</div>
+<div class="self_info">
+	<div>账号：</div>
+	<div>昵称：</div>
+	<div>剩余借阅次数：</div>
+</div>
+<form id="change_self">
+	<input type="text" name="username" placeholder="请更改昵称">
+	<input type="button" name="submit" value="提交" onclick="change_self();">
+	<img src="img/close.jpg" class="close_self">
+</form>
+<form id="change_ps">
+	<input type="password" name="old_ps" placeholder="请输入原密码">
+	<input type="password" name="new_ps" placeholder="请输入新密码">
+	<input type="password" name="cf_ps" placeholder="请再次确认密码">
+	<input type="button" name="submit" value="确认修改" class="submit" onclick="change_myps();">
+	<img src="img/close.jpg" class="close_ps">
+</form>
+</body>
+</html>

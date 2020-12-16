@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>查询结果</title>
+<link href="css/publice.css" type="text/css" rel="stylesheet" />
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<link href="css/manager.css" rel="stylesheet">
+<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.min.js"></script>
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+</head>
+<body>
+	<div class="topWrap">
+		<div class="top_bar">
+			<div class="top_left">
+				欢迎访问-查询结果
+			</div>
+		</div>
+	</div>
+	<div id="page">
+		<table class="mytable">
+			<tr>
+				<td>ISBN</td>
+				<td>类型</td>
+				<td>书籍名称</td>
+				<td>作者</td>
+				<td>出版社</td>
+				<td>出版日期</td>
+				<td>简介</td>
+				<td>馆藏</td>
+				<td>可借</td>
+				<td>存放位置</td>
+				<td>关键词</td>
+			</tr>
+			<tr v-for="site in sites">
+				<td>{{site[0]}}</td>
+				<td>{{site[1]}}</td>
+				<td>{{site[2]}}</td>
+				<td>{{site[3]}}</td>
+				<td>{{site[4]}}</td>
+				<td>{{site[10]}}</td>
+				<td>{{site[5]}}</td>
+				<td>{{site[6]}}</td>
+				<td>{{site[7]}}</td>
+				<td>{{site[8]}}</td>
+				<td>{{site[9]}}</td>
+				
+			</tr>
+		</table>
+	</div>
+	
+    <script type="text/javascript">
+    	var obj = $.parseJSON(localStorage.book);
+    	obj.pop();
+    	console.log(obj);
+    	var app = new Vue({
+    		el: '#page',
+		  	data: {
+		    	sites:obj,
+		    	size1:obj.length-1,
+		    	size2:obj[0].length
+		 	}
+    	})
+    </script>
+</body>
+</html>
