@@ -1,0 +1,7 @@
+.nav li a input{
+	width: 300px;
+    height: 48px;
+    margin: 0 auto;
+    border-radius: 24px;
+    padding-left: 20px;
+}

@@ -1,0 +1,75 @@
+.self_info{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 360px;
+    padding: 20px;
+    border-radius: 10px;
+    height: 110px;
+    box-shadow: 0 0 5px lightgrey;
+    left: 142px;
+    top: 223px;
+    font-size: 16px;
+    background: white;
+    z-index: 10;
+}
+#change_self{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 360px;
+    padding: 20px;
+    border-radius: 10px;
+    height: 110px;
+    box-shadow: 0 0 5px lightgrey;
+    left: 588px;
+    top: 223px;
+    font-size: 20px;
+    background: white;
+    z-index: 10;
+}
+#change_self input[type="button"]{
+    height: 30px;
+    border-radius: 5px;
+}
+.close_ps,.close_self{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 330px;
+    top: 10px;
+}
+#change_ps {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 360px;
+    padding: 20px;
+    border-radius: 10px;
+    height: 110px;
+    box-shadow: 0 0 5px lightgrey;
+    left: 1033px;
+    top: 223px;
+    font-size: 20px;
+    background: white;
+    z-index: 10;
+}
+#change_ps input[type="password"] {
+    height: 40px;
+    font-size: 12px;
+}
+#change_ps input[type="button"] {
+    height: 40px;
+    cursor: pointer;
+}
+.background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    left: 0;
+    top: 0;
+}
